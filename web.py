@@ -12,7 +12,8 @@ def index():
     # return "中国<span style= 'color:red;'>电信</span>"
     # Flask 内部会自动打开这个index.html文件，读取内容
     # 默认去当前项目目录下的template文件夹下找
-    return render_template("PycharmQuick.html")
+    #return render_template("PycharmQuick.html")
+    return render_template("TestHtml.html")
 
 
 if __name__ == "__main__":
