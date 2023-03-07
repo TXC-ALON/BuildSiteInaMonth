@@ -18,21 +18,16 @@ def index():
 
 @app.route("/get/news")
 def getNews():
-    # return "中国<span style= 'color:red;'>电信</span>"
-    # Flask 内部会自动打开这个index.html文件，读取内容
-    # 默认去当前项目目录下的template文件夹下找
-    # return render_template("PycharmQuick.html")
     return render_template("getNews.html")
 
 
-@app.route("/comic/list")  # 商品列表
+@app.route("/comic/list")  # 漫画列表
 def comic_list():
-    # return "中国<span style= 'color:red;'>电信</span>"
-    # Flask 内部会自动打开这个index.html文件，读取内容
-    # 默认去当前项目目录下的template文件夹下找
-    # return render_template("PycharmQuick.html")
     return render_template("ComicR.html")
 
+@app.route("/usr/list")  # 用户列表
+def usr_list():
+    return render_template("usrList.html")
 
 if __name__ == "__main__":
     app.run()
