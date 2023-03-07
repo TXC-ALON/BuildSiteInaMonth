@@ -25,9 +25,16 @@ def getNews():
 def comic_list():
     return render_template("ComicR.html")
 
+
 @app.route("/usr/list")  # 用户列表
 def usr_list():
     return render_template("usrList.html")
+
+
+@app.route("/usr/register")  # 用户列表
+def usr_register():
+    return render_template("usrRegister.html")
+
 
 if __name__ == "__main__":
     app.run()

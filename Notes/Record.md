@@ -148,14 +148,85 @@ img标签也是一个行内标签，不设定的话，不会一次占一行。
 #### 8 表格
 
 ```html
-<table>
-    <thead>
-    	<tr> <th>ID</th> <th>作品名</th> <th>作者</th> </tr>
-    </thead>
-    <tbody>
-    
-    </tbody>
-    
+<table border="1">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>作品名</th>
+		<th>作者</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>01</td>
+		<td>狂赌之渊</td>
+		<td>尚村透</td>
+	</tr>
+	<tr>
+		<td>02</td>
+		<td>新世纪福音战士</td>
+		<td>貞本義行</td>
+	</tr>
+	<tr>
+		<td>03</td>
+		<td>一人之下</td>
+		<td>米二</td>
+	</tr>
+	</tbody>
 </table>
 ```
 
+#### 9 input系列 7个
+
+默认是行内标签
+
+```html
+<input type = "text ">输入文本
+<input type="password">输入密码
+<input type="file"> 选择文件
+性别:
+男<input type="radio" name="n1">单选框
+女<input type="radio" name="n1">
+	
+爱好:
+足球<input type="checkbox">
+象棋<input type="checkbox">
+篮球<input type="checkbox">
+看书<input type="checkbox">
+
+按钮
+	<input type="button" value="提交"> //普通按钮
+	<input type="submit" value="提交"> //提交表单
+```
+
+#### 10 下拉框
+
+```html
+<select>
+    城市：
+    <option>北京</option>
+    <option>上海</option>
+    <option>南京</option>
+    <option>深圳</option>
+</select>
+```
+
+多选下拉框
+
+```html
+<select multiple>
+    城市：
+    <option>北京</option>
+    <option>上海</option>
+    <option>南京</option>
+    <option>深圳</option>
+</select>
+```
+
+#### 11 多行文本
+
+```html
+<textarea></textarea>
+```
+
+#### 
